@@ -1,0 +1,90 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+  .nav__mobile {
+    display: none; }
+  .nav__logo {
+    background-image: url("../images/Air.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 45px;
+    margin-right: 79px;
+    z-index: 2; }
+  .nav__list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    width: 100%; }
+  .nav__item {
+    margin-right: 56px; }
+  .nav__last-item {
+    margin-right: 0;
+    position: absolute;
+    right: 0; }
+  .nav__link {
+    position: relative;
+    padding: 8px 4px;
+    color: #fff;
+    text-decoration: none;
+    outline: none; }
+  .nav__link:hover:after {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    content: "";
+    height: 2px;
+    background-color: #ff9c8e;
+    border-radius: 4px;
+    -webkit-animation: bottomLine 0.5s forwards;
+            animation: bottomLine 0.5s forwards; }
+  .nav__link:focus {
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px 7px #f9c2f2;
+            box-shadow: 0 0 5px 7px #f9c2f2; }
+  .nav__link:active {
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px 7px #f9c2f2;
+            box-shadow: 0 0 5px 7px #f9c2f2; }
+
+@-webkit-keyframes bottomLine {
+  from {
+    width: 0; }
+  to {
+    width: calc(100% - 8px); } }
+
+@keyframes bottomLine {
+  from {
+    width: 0; }
+  to {
+    width: calc(100% - 8px); } }
+
+@media screen and (max-width: 1200px) {
+  .nav__mobile-button:after {
+    content: url("../images/menu-button.png");
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .nav__list {
+    display: none; } }
+
+/*# sourceMappingURL=nav.css.map */

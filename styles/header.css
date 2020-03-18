@@ -1,0 +1,50 @@
+.header {
+  position: relative;
+  height: 800px;
+  background-color: #008aff;
+  border-radius: 0 0 0 200px;
+  color: #fff; }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .header__intro-information {
+    position: absolute;
+    top: 240px;
+    left: 12%;
+    z-index: 2; }
+  .header__intro-picture {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
+
+@media screen and (max-width: 1200px) {
+  .header {
+    height: 450px; } }
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 650px; }
+    .header__intro-information {
+      top: 100px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+/*# sourceMappingURL=header.css.map */
