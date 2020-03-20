@@ -1,0 +1,100 @@
+.expertise {
+  padding: 128px 0 134px;
+  width: 72%; }
+  .expertise__heading {
+    font-size: 52px;
+    text-align: center; }
+  .expertise__basis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 64px; }
+  .expertise__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 264px; }
+  .expertise__img {
+    width: 166px;
+    height: 166px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15%; }
+  .expertise__img1 {
+    background-image: url("../images/image 1.png"); }
+  .expertise__img2 {
+    background-image: url("../images/image 2.png"); }
+  .expertise__img3 {
+    background-image: url("../images/image 3.png"); }
+  .expertise__heading-small {
+    font-size: 20px;
+    margin: 40px 0 16px; }
+  .expertise__text {
+    font-size: 14px;
+    text-align: center; }
+
+@media screen and (max-width: 2600px) {
+  .expertise {
+    max-width: 1440px; }
+    .expertise__heading {
+      font-size: 62px; }
+    .expertise__img {
+      width: 250px;
+      height: 250px; }
+    .expertise__heading-small {
+      font-size: 32px; }
+    .expertise__text {
+      font-size: 22px; } }
+
+@media screen and (max-width: 1920px) {
+  .expertise__heading {
+    font-size: 52px; }
+  .expertise__img {
+    width: 166px;
+    height: 166px; }
+  .expertise__heading-small {
+    font-size: 20px; }
+  .expertise__text {
+    font-size: 14px; } }
+
+@media screen and (max-width: 1250px) {
+  .expertise {
+    width: 80%; }
+    .expertise__box {
+      width: 240px; } }
+
+@media screen and (max-width: 1024px) {
+  .expertise {
+    padding: 50px 0; }
+    .expertise__heading {
+      font-size: 34px; }
+    .expertise__basis {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 30px; }
+    .expertise__box:not(:last-child) {
+      margin-bottom: 30px; }
+    .expertise__heading-small {
+      margin: 15px 0 7px; } }
+
+@media screen and (max-width: 425px) {
+  .expertise__heading {
+    font-size: 26px; } }
+
+/*# sourceMappingURL=expertise.css.map */

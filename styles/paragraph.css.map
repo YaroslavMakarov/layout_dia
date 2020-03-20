@@ -1,0 +1,1 @@
+{"version":3,"sources":["paragraph.scss"],"names":[],"mappings":"AAAA;EACE,kCAAkC;EAClC,cAAc;EACd,iBAAiB,EAAA","file":"paragraph.css","sourcesContent":[".paragraph {\n  font-family: Open Sans, sans-serif;\n  color: #6c788b;\n  line-height: 150%;\n}\n"]}

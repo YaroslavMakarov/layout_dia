@@ -1,0 +1,1 @@
+{"version":3,"sources":["heading.scss"],"names":[],"mappings":"AAAA;EACE,gCAAgC;EAChC,gBAAgB;EAChB,iBAAiB;EACjB,cAAc,EAAA","file":"heading.css","sourcesContent":[".heading {\n  font-family: Poppins, sans-serif;\n  font-weight: 600;\n  line-height: 150%;\n  color: #253757;\n}\n"]}

@@ -1,0 +1,60 @@
+.about-us {
+  width: 754px;
+  padding: 148px 0; }
+  .about-us__heading {
+    font-size: 32px; }
+  .about-us__paragraph {
+    font-size: 24px; }
+
+@media screen and (max-width: 2560px) {
+  .about-us {
+    width: 900px; }
+    .about-us__heading {
+      font-size: 52px; }
+    .about-us__paragraph {
+      font-size: 34px; } }
+
+@media screen and (max-width: 1920px) {
+  .about-us__heading {
+    font-size: 42px; }
+  .about-us__paragraph {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1600px) {
+  .about-us {
+    width: 754px; }
+    .about-us__heading {
+      font-size: 32px; }
+    .about-us__paragraph {
+      font-size: 24px; } }
+
+@media screen and (max-width: 1025px) {
+  .about-us {
+    width: 754px;
+    padding: 70px 0; }
+    .about-us__heading {
+      text-align: center;
+      font-size: 26px; }
+    .about-us__paragraph {
+      font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .about-us {
+    width: 500px;
+    padding: 70px 0; }
+    .about-us__heading {
+      font-size: 22px; }
+    .about-us__paragraph {
+      font-size: 16px; } }
+
+@media screen and (max-width: 425px) {
+  .about-us {
+    width: 500px;
+    padding: 25px 0; }
+    .about-us__heading {
+      font-size: 16px; }
+    .about-us__paragraph {
+      font-size: 13px;
+      text-align: center; } }
+
+/*# sourceMappingURL=about-us.css.map */
