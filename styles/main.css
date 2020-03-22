@@ -1647,17 +1647,17 @@ p {
     font-size: 24px;
     color: #fff;
     margin-bottom: 48px; }
-  .contact__social-container {
+  .contact__grid-container {
     margin-top: 16px; }
-  .contact__social {
+  .contact__grid {
     display: inline-block;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
     transition: opacity 0.3s, -webkit-transform 0.3s;
     transition: opacity 0.3s, transform 0.3s;
     transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s; }
-  .contact__social:not(:last-child) {
+  .contact__grid:not(:last-child) {
     margin-right: 45px; }
-  .contact__social:hover {
+  .contact__grid:hover {
     opacity: 0.5;
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
