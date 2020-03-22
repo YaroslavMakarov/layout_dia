@@ -1,0 +1,135 @@
+.footer {
+  width: 72%;
+  padding: 180px 0 80px; }
+  .footer__top {
+    width: 92%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 121px; }
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer__nav-logo {
+    background-image: url("../images/Air.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 26px; }
+  .footer__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none; }
+  .footer__nav-item:not(:last-child) {
+    margin-right: 58px; }
+  .footer__nav-link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 7px 3px;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: width 0.3s;
+    transition: width 0.3s; }
+  .footer__nav-link:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff9c8e;
+    -webkit-animation: bottomLine 0.3s;
+            animation: bottomLine 0.3s; }
+
+@-webkit-keyframes bottomLine {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes bottomLine {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+  .footer__nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 200px; }
+
+@media (min-width: 1901px) and (max-width: 3500px) {
+  .footer {
+    max-width: 1440px; } }
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    width: 85%; }
+    .footer__top {
+      width: 100%; }
+    .footer__nav-item:not(:last-child) {
+      margin-right: 35px; }
+    .footer__nav-link {
+      font-size: 10px; } }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    width: 100%; }
+    .footer__nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .footer__nav-logo {
+      margin-bottom: 10px; }
+    .footer__nav-link {
+      font-size: 9px; } }
+
+@media screen and (max-width: 700px) {
+  .footer {
+    width: 100%;
+    padding: 50px 0; }
+    .footer__top {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 50px; }
+    .footer__nav {
+      margin: 0 auto;
+      width: 300px; }
+    .footer__nav-item:not(:last-child) {
+      margin-right: 25px; }
+    .footer__nav-list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/*# sourceMappingURL=footer.css.map */

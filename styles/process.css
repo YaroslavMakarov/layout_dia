@@ -36,6 +36,8 @@
     grid-template-rows: 264px 264px;
     grid-gap: 30px; }
   .process__step {
+    position: relative;
+    z-index: 2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,7 +121,7 @@
   .process__link4 {
     background-color: #f36363; }
 
-@media (min-width: 1901px) and (max-width: 2560px) {
+@media (min-width: 1901px) and (max-width: 3500px) {
   .process {
     max-width: 1440px; }
     .process__preview {

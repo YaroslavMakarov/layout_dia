@@ -22,7 +22,11 @@
     bottom: 0;
     right: 0; }
 
-@media (min-width: 1601px) and (max-width: 2560px) {
+@media (min-width: 1601px) and (max-width: 3560px) {
+  .header__nav-desktop {
+    max-width: 1440px; }
+  .header__intor-information {
+    max-width: 1440px; }
   .header__intro-picture {
     right: 10%; } }
 

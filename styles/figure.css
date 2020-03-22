@@ -1,0 +1,92 @@
+.figures {
+  position: absolute; }
+  .figures__color-yellow {
+    border: solid 3px rgba(252, 195, 4, 0.5); }
+  .figures__color-yellow-bold {
+    border: solid 5px rgba(252, 195, 4, 0.5); }
+  .figures__color-green-bold {
+    border: solid 5px rgba(3, 213, 66, 0.5); }
+  .figures__color-pink {
+    border: solid 3px rgba(242, 86, 86, 0.5); }
+  .figures__color-purple {
+    border: solid 3px rgba(188, 4, 252, 0.5); }
+  .figures__color-purple-bold {
+    border: solid 5px rgba(188, 4, 252, 0.5); }
+  .figures__color-blue-bold {
+    border: solid 5px rgba(86, 204, 242, 0.5); }
+  .figures__size-small {
+    width: 45px;
+    height: 17px; }
+  .figures__size-middle {
+    width: 94px;
+    height: 37px; }
+  .figures__size-large {
+    width: 143px;
+    height: 57px; }
+  .figures__figure {
+    position: absolute;
+    border-radius: 500px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .figures__location1 {
+    top: 77px;
+    left: 446px; }
+  .figures__location2 {
+    bottom: 177px;
+    left: 481px; }
+  .figures__location3 {
+    bottom: 322px;
+    right: 67px; }
+  .figures__location4 {
+    top: 131px;
+    right: 216px; }
+  .figures__location5 {
+    top: 283px;
+    left: 269px; }
+  .figures__location6 {
+    top: 72px;
+    left: 233px; }
+  .figures__location7 {
+    bottom: 214px;
+    right: 314px; }
+  .figures__location8 {
+    bottom: 128px;
+    right: 553px; }
+  .figures__location9 {
+    top: 110px;
+    right: 111px; }
+  .figures__location10 {
+    bottom: 72px;
+    left: 131px; }
+  .figures__location11 {
+    bottom: 113px;
+    right: 144px; }
+  .figures__location12 {
+    top: 370px;
+    left: 82px; }
+
+@media screen and (max-width: 755px) {
+  .figures__location3 {
+    display: none; }
+  .figures__location4 {
+    display: none; }
+  .figures__location5 {
+    display: none; }
+  .figures__location8 {
+    display: none; }
+  .figures__location12 {
+    display: none; } }
+
+@media screen and (max-width: 520px) {
+  .figures__location1 {
+    display: none; }
+  .figures__location2 {
+    display: none; }
+  .figures__location6 {
+    display: none; }
+  .figures__location10 {
+    display: none; } }
+
+/*# sourceMappingURL=figure.css.map */
