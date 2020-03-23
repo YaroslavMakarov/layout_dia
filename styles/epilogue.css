@@ -37,10 +37,16 @@
     background: #ff9c8e;
     color: #fff;
     text-decoration: none;
-    -webkit-transition: backgraund-color 0.3s;
-    transition: backgraund-color 0.3s; }
+    outline: none;
+    -webkit-transition: backgraund-color 0.3s, -webkit-box-shadow 0.3s;
+    transition: backgraund-color 0.3s, -webkit-box-shadow 0.3s;
+    transition: backgraund-color 0.3s, box-shadow 0.3s;
+    transition: backgraund-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s; }
   .epilogue__link:hover {
-    background-color: rgba(255, 156, 142, 0.5); }
+    background-color: rgba(255, 156, 142, 0.8); }
+  .epilogue__link:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(255, 156, 142, 0.7);
+            box-shadow: 0 0 17px 5px rgba(255, 156, 142, 0.7); }
   .epilogue__figures {
     position: absolute;
     width: 100%;

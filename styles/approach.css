@@ -34,13 +34,18 @@
   .approach__link {
     display: inline-block;
     margin-right: 34px;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s; }
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.3s;
+    transition: -webkit-transform 0.5s, -webkit-box-shadow 0.3s;
+    transition: transform 0.5s, box-shadow 0.3s;
+    transition: transform 0.5s, box-shadow 0.3s, -webkit-transform 0.5s, -webkit-box-shadow 0.3s;
+    outline: none; }
   .approach__link:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+  .approach__link:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(255, 156, 142, 0.7);
+            box-shadow: 0 0 17px 5px rgba(255, 156, 142, 0.7); }
   .approach__text {
     width: 263px;
     font-size: 15px;
@@ -60,22 +65,28 @@
     border-radius: 200px 0 0; }
 
 @media (min-width: 1901px) and (max-width: 3500px) {
-  .approach__preview {
-    font-size: 19px; }
-  .approach__heading {
-    font-size: 40px;
-    width: 450px;
-    letter-spacing: 2px; }
-  .approach__text {
-    font-size: 20px;
-    width: 350px;
-    letter-spacing: 1px; }
-  .approach__picture-wrapper {
-    margin-right: 12%; } }
-
-@media (min-width: 1601px) and (max-width: 1900px) {
-  .approach__picture-wrapper {
-    margin-right: 13%; } }
+  .approach__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .approach {
+    max-width: 1440px;
+    border-radius: 170px; }
+    .approach__preview {
+      font-size: 19px; }
+    .approach__heading {
+      font-size: 40px;
+      width: 450px;
+      letter-spacing: 2px; }
+    .approach__text {
+      font-size: 20px;
+      width: 350px;
+      letter-spacing: 1px; }
+    .approach__picture {
+      border-radius: 170px 0; } }
 
 @media screen and (max-width: 1400px) {
   .approach {

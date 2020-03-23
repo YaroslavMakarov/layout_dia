@@ -50,6 +50,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
     -webkit-transition: width 0.3s;
     transition: width 0.3s; }
   .footer__nav-link:hover:after {
@@ -64,6 +65,9 @@
     background-color: #ff9c8e;
     -webkit-animation: bottomLine 0.3s;
             animation: bottomLine 0.3s; }
+  .footer__link:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 200px; }
 
 @-webkit-keyframes bottomLine {
   from {
@@ -82,7 +86,7 @@
 
 @media (min-width: 1901px) and (max-width: 3500px) {
   .footer {
-    max-width: 1440px; } }
+    max-width: 1640px; } }
 
 @media screen and (max-width: 1400px) {
   .footer {

@@ -1,43 +1,65 @@
 .header {
-  position: relative;
-  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-color: #008aff;
-  border-radius: 0 0 0 200px;
-  color: #fff; }
-  .header__nav-desktop, .header__nav-mobile {
+  position: relative; }
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    top: 52px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-  .header__intro-information {
-    position: absolute;
-    top: 240px;
-    left: 12%; }
-  .header__intro-picture {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
-
-@media (min-width: 1601px) and (max-width: 3560px) {
+    width: 86%;
+    padding-top: 50px; }
+  .header__content-container {
+    position: relative;
+    width: 100%;
+    padding-left: 20px; }
   .header__nav-desktop {
-    max-width: 1440px; }
-  .header__intor-information {
-    max-width: 1440px; }
-  .header__intro-picture {
-    right: 10%; } }
+    margin-bottom: 40px; }
+  .header__information-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
-@media screen and (max-width: 760px) {
+@media (min-width: 1901px) and (max-width: 3500px) {
   .header {
-    height: 600px;
-    border-radius: 0; }
-    .header__intro-information {
-      top: 100px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .header__container {
+      max-width: 1640px; } }
+
+@media screen and (max-width: 1400px) {
+  .header__container {
+    width: 90%; }
+  .header__information-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
+
+@media screen and (max-width: 766px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .header__container {
+      width: 100%; }
+    .header__content-container {
+      width: 100%;
+      padding: 0; }
+    .header__information-wrapper {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 /*# sourceMappingURL=header.css.map */

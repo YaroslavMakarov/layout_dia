@@ -103,23 +103,36 @@
     height: 40px;
     border-radius: 50%;
     margin-right: 16px;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+    transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    outline: none; }
   .process__link:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
   .process__link1 {
     background-color: #56ccf2; }
+  .process__link1:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(86, 204, 242, 0.7);
+            box-shadow: 0 0 17px 5px rgba(86, 204, 242, 0.7); }
   .process__link2 {
     background-color: #fcc91d; }
+  .process__link2:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(252, 201, 29, 0.7);
+            box-shadow: 0 0 17px 5px rgba(252, 201, 29, 0.7); }
   .process__link3 {
     background-color: #15d850; }
+  .process__link3:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(21, 216, 80, 0.7);
+            box-shadow: 0 0 17px 5px rgba(21, 216, 80, 0.7); }
   .process__link4 {
     background-color: #f36363; }
+  .process__link4:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(243, 99, 99, 0.7);
+            box-shadow: 0 0 17px 5px rgba(243, 99, 99, 0.7); }
 
 @media (min-width: 1901px) and (max-width: 3500px) {
   .process {

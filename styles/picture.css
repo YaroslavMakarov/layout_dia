@@ -1,22 +1,31 @@
 .picture {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 687px;
   height: 680px;
+  padding: 50px;
   background-image: url("../images/Photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 200px 0 0; }
+  border-radius: 200px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .picture__img {
-    width: 100%;
-    height: 100%;
-    position: relative; }
-  .picture__link-left {
-    position: absolute;
-    bottom: 66px;
-    left: 48px; }
-  .picture__link-right {
-    position: absolute;
-    bottom: 66px;
-    left: 92px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .picture__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,66 +38,73 @@
             align-items: center;
     width: 32px;
     height: 32px;
+    border-radius: 50%;
     background-color: white;
-    border-radius: 50%; }
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    outline: none; }
+  .picture__link:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  .picture__link:focus {
+    -webkit-box-shadow: 0 0 17px 5px rgba(255, 255, 255, 0.7);
+            box-shadow: 0 0 17px 5px rgba(255, 255, 255, 0.7); }
+  .picture__link-left {
+    margin-right: 8px; }
+  .picture__link-right {
+    margin-right: 24px; }
   .picture__heading {
-    position: absolute;
-    bottom: 90px;
-    left: 148px;
     font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    line-height: 19px; }
+    line-height: 19px;
+    margin-bottom: 8px; }
   .picture__text {
-    position: absolute;
-    width: 362px;
-    bottom: 30px;
-    left: 148px;
+    width: 264px;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
     line-height: 140%; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .picture {
-    width: 380px;
-    height: 340px;
-    border-radius: 100px 0 0; }
-    .picture__heading {
-      bottom: 50%;
-      left: 15%; }
-    .picture__text {
-      bottom: 35%;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      width: 70%; }
+    width: 670px;
+    height: 550px; } }
+
+@media screen and (max-width: 766px) {
+  .picture {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px 50px 0 0; }
+    .picture__img {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      position: relative; }
     .picture__link-left {
-      bottom: 34px;
-      left: 15%; }
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      margin: 0; }
     .picture__link-right {
-      bottom: 34px;
-      right: 15%;
-      left: unset; } }
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      margin: 0; }
+    .picture__information {
+      margin-bottom: 70px; }
+    .picture__heading {
+      text-align: center; }
+    .picture__text {
+      text-align: center; } }
 
-@media (min-width: 1901px) and (max-width: 2560px) {
-  .picture__intro-picture {
-    right: 10%; } }
-
-@media screen and (max-width: 1200px) {
-  .picture {
-    height: 450px;
-    width: 500px; } }
-
-@media screen and (max-width: 760px) {
-  .picture {
-    height: 350px;
-    width: 400px; } }
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 423px) {
   .picture {
     width: 100vw;
-    height: 83vw; } }
+    height: 100vw; } }
 
 /*# sourceMappingURL=picture.css.map */
